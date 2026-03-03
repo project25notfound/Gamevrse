@@ -1939,8 +1939,11 @@ socket.on('readyCountdown', data => {
 
   const update = () => {
     const ms = Math.max(0, data.endsAt - Date.now());
+    const seconds = Math.ceil(ms / 1000);
+    // FIX: Cap display at 60 seconds max to prevent display bugs
+    const displaySeconds = Math.min(seconds, 60);
     readyCountdownEl.textContent =
-      `Game starts in ${Math.ceil(ms / 1000)}s`;
+      `Game starts in ${displaySeconds}s`;
   };
 
   update();
