@@ -1115,8 +1115,8 @@ function updateCountdown() {
   const ms = Math.max(0, turnDeadline - Date.now());
   const seconds = Math.ceil(ms / 1000);
   
-  // FIX: Cap display at 30 seconds max to prevent display bugs
-  const displaySeconds = Math.min(seconds, 30);
+  // FIX: Cap display at 15 seconds max to prevent display bugs
+  const displaySeconds = Math.min(seconds, 15);
   turnTimerEl && (turnTimerEl.textContent = displaySeconds + 's');
   
   if (ms <= 5000) {
