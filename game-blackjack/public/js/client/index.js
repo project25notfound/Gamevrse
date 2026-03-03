@@ -1966,8 +1966,10 @@ socket.on('nextRoundCountdown', data => {
   const update = () => {
     const ms = Math.max(0, nextRoundDeadline - Date.now());
     const s = Math.ceil(ms / 1000);
+    // FIX: Cap display at 15 seconds max to prevent display bugs
+    const displaySeconds = Math.min(s, 15);
 
-    turnTimerEl.textContent = `Next round in: ${s}s`;
+    turnTimerEl.textContent = `Next round in: ${displaySeconds}s`;
     turnTimerEl.classList.add('warning');
 
     if (ms <= 0) {
