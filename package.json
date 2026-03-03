@@ -1,0 +1,20 @@
+{
+  "name": "gamevrse",
+  "version": "1.0.0",
+  "description": "Multiplayer game hub with various games",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server-homepage-blackjack.js",
+    "start:server1": "node server-homepage-blackjack.js",
+    "start:server2": "node server-colorrush-rankly.js",
+    "dev": "node server-homepage-blackjack.js"
+  },
+  "keywords": ["games", "multiplayer", "socket.io"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "nanoid": "^5.1.6"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "blackjack-roulette-game",
+  "version": "1.0.0",
+  "description": "Blackjack Roulette - Multiplayer card game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["game", "multiplayer", "blackjack"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
