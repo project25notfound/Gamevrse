@@ -1,6 +1,6 @@
 // client.js
 // Defensive socket init (avoid error when socket.io client not present)
-const socket = (typeof io !== 'undefined') ? io('/colorrush') : null;
+const socket = (typeof io !== 'undefined') ? io() : null;
 
 // DOM
 const status = document.getElementById("status"); // This will be null now, using phase banner instead

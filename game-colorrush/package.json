@@ -1,12 +1,12 @@
 {
-  "name": "colorrush-game",
+  "name": "simon404",
   "version": "1.0.0",
-  "description": "ColorRush - Memory pattern multiplayer game",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["game", "multiplayer", "memory"],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {

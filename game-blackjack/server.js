@@ -2543,8 +2543,7 @@ socket.on('toggleReady', () => {
 
 });
 
-const PORT = process.env.PORT || 3002;
-server.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`))
+server.listen(3000, () => console.log('Server running on http://localhost:3000'))
   .on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
       console.error('❌ Port 3000 is already in use!');
